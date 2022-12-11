@@ -1,0 +1,31 @@
+12/2 6:25 PM - 1.5 hours
+    Today incorporated feedback from the peer review in my UML diagram. Took feedback that interface function for
+    RSVP'ing was confusing/not required and instead decided to implement the serializable interface.
+    Restructured the User hierarchy to have the host class as a subclass of the guest class and added more key functions. Restructured the Party
+    hierarchy to divide subclasses into different party types. Also changed the data management system to use a partyID as a key
+    for the party database instead of a User object.
+
+12/2 9:34 PM - 1 hour
+    Set up the basic class hierarchies for User and Party hierarchies. Set up basic POJO methods: constructors, toString, Equals, etc.
+
+12/4 10:00 PM - 1 hour 45 minutes
+    Began implementing main EviteSystem class: created new account and login capabilities with error checking. Users can now
+    create a guest, host, or premiumUser account, which vary by host functionality or the # of parties an account can host.
+
+12/6 8:00 PM - 2 hours
+    Implemented Menu structure, reading out the menu options and allowing the user to select a number to pick an otpion.
+    Created method stubs as placeholders to be filled in later, also edited Menu enum to return length, etc.
+
+12/7 - 1 hour
+    Moved gift list from giftParty to party superclass to provide greater functionality. Also decided to remove catered event as it felt
+        somewhat redundant with a potluck party.
+
+12/8 - 3 hours
+    Implemented fileToString methods in each class and created methods to perform file read/write functionality in the eviteSystem to a txt.
+    Then decided to also implement serializable to save the user and party databases as flattened .ser objects which are transferable.
+
+12/10 - 8 hours
+    Coded all the host functionalities: creating a new method using user input, allowing
+        users to view events, and allowing to users to remake events with new information or add/remove guests.
+        Implemented methods to parse through the databases to determine which party the user is invited to. Then provided functionality to allow the user to RSVP or decline an event
+    and then give a gift and/or sign up for a potluck dish.
